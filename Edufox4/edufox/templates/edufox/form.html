@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>
+		querry Forms
+	</title>
+</head>
+	<body>
+
+		<form action='../../save/' method='post'>
+			{% csrf_token %}
+			{{form.as_p}}
+			<input type='submit'>
+		</form>
+	</body>
+</html>
